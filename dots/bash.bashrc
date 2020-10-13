@@ -57,5 +57,3 @@ clear
 
 #Launch Neofetch
 neofetch
-
-echo Yo
