@@ -16,7 +16,7 @@ bind "set completion-ignore-case on"
 #Some Aliases
 alias diff='diff --color=always'
 alias ls='ls -Ap --color=always'
-alias less='less -r'
+alias less='less -RNs --use-color'
 alias grep='grep --color=always'
 
 #Some Exports
@@ -50,6 +50,13 @@ ex ()
   else
     echo "'$1' is not a valid file"
   fi
+}
+
+#A function to clear app caches since google is dumb
+# ROOT ONLY
+clear_cache ()
+{
+su -c "rm -rf /data/data/*/cache"
 }
 
 #Clear The Screen
