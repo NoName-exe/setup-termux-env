@@ -47,6 +47,7 @@ echo 'DONE'
 #Set Up Neofetch
 echo 'SETTING UP NEOFETCH...'
 sleep 2
+mkdir -p $HOME/.config/neofetch
 touch $HOME/.config/neofetch/config.conf
 cp -rf dots/config.conf $HOME/.config/neofetch/config.conf
 echo 'DONE'
