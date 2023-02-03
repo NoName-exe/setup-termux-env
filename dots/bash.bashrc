@@ -52,13 +52,6 @@ ex ()
   fi
 }
 
-#A function to clear app caches since google is dumb
-# ROOT ONLY
-clear_cache ()
-{
-su -c "rm -rf /data/data/*/cache"
-}
-
 #Clear The Screen
 clear
 
