@@ -30,7 +30,7 @@ sleep 2
 # shellharden silversearcher-ag strace termux-api tmux tree vim zip zsh zstd
 
 # Set Up Dotfiles
-echo 'SETTING UP DOTFILES'
+echo 'SETTING UP DOTFILES...'
 
 #Remove Termux Motd
 echo 'REMOVING TERMUX MOTD...'
@@ -53,9 +53,19 @@ cp -rf dots/config.conf $HOME/.config/neofetch/config.conf
 echo 'DONE'
 
 #Set Up Termux Extra Keys
-echo 'SETTING UP EXTRA KEYS'
+echo 'SETTING UP EXTRA KEYS...'
 sleep 2
 cp -rf dots/termux.properties $HOME/.termux/termux.properties
+echo 'DONE'
+
+#Set Up Boot Scripts
+echo 'SETTING UP BOOT SCRIPTS...'
+sleep 2
+mkdir -p $HOME/.termux/boot
+touch $HOME/.termux/boot/clear_cache.sh
+touch $HOME/.termux/boot/v4a_notification.sh
+cp -rf dots/clear_cache.sh $HOME/.termux/boot/clear_cache.sh
+cp -rf dots/v4a_notification.sh $HOME/.termux/boot/v4a_notification.sh
 echo 'DONE'
 
 sleep 5
