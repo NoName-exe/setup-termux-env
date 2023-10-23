@@ -63,9 +63,7 @@ echo 'SETTING UP BOOT SCRIPTS...'
 sleep 2
 mkdir -p $HOME/.termux/boot
 touch $HOME/.termux/boot/clear_cache.sh
-touch $HOME/.termux/boot/v4a_notification.sh
 cp -rf dots/clear_cache.sh $HOME/.termux/boot/clear_cache.sh
-cp -rf dots/v4a_notification.sh $HOME/.termux/boot/v4a_notification.sh
 echo 'DONE'
 
 sleep 5
